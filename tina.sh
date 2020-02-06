@@ -71,6 +71,7 @@ exec () {
 # " /bin/gunzip sanitized_daily_myproject_production_db.sql.gz"
 # ": /usr/local/bin/drush -v -d sql-cli < \"sanitized_daily_myproject_production_db.sql.gz\";\n$(/usr/local/bin/drush sql-cli < "sanitized_daily_myproject_production_db.sql.gz";)"
 # ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE cache\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE cache";)"
+# ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE cache_form\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE cache_form";)"
 # ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE ctools_object_cache\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE ctools_object_cache";)"
 # " /usr/local/bin/drush -v rr"
 # " /usr/local/bin/drush -v -y updb"
