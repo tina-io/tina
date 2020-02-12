@@ -69,7 +69,7 @@ exec () {
 # " /bin/rm sanitized_daily_myproject_production_db.sql"
 # " /usr/bin/wget --no-verbose -e use_proxy=no --user myuser --password maypassword http://mydomain.myproject/files-for/myproject/sanitized_daily_myproject_production_db.sql.gz"
 # " /bin/gunzip sanitized_daily_myproject_production_db.sql.gz"
-# ": /usr/local/bin/drush -v -d sql-cli < \"sanitized_daily_myproject_production_db.sql.gz\";\n$(/usr/local/bin/drush sql-cli < "sanitized_daily_myproject_production_db.sql.gz";)"
+# ": /usr/local/bin/drush -v -d sql-cli < \"sanitized_daily_myproject_production_db.sql.gz\";\n$(/usr/local/bin/drush sql-cli < "sanitized_daily_myproject_production_db.sql";)"
 # ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE cache\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE cache";)"
 # ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE cache_form\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE cache_form";)"
 # ": /usr/local/bin/drush -v -d sqlq \"TRUNCATE TABLE ctools_object_cache\";\n$(/usr/local/bin/drush -v sqlq "TRUNCATE TABLE ctools_object_cache";)"
